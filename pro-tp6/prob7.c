@@ -30,6 +30,6 @@ int main()
         printf("%d ", ret[i]);
     }
     printf("}\n");
-    
+    // qualquer coisa
     return 0;
 }
