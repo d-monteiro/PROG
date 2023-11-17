@@ -9,9 +9,11 @@
 
 void filtro_media(unsigned char entrada[], unsigned char saida[], int largura, int altura)
 {
-    /* alinea a) */
-
-
+    for (int x = 0; x < largura; x++)
+    {
+        for (int y = 0; y < altura; y++)
+        saida[POS(x,y)]=entrada[POS(x-1,y-1)]+entrada[POS(x,y-1)]+entrada[POS(x+1,y-1)]+entrada[POS(x-1,y)]+entrada[POS(x,y)]+entrada[POS(x+1,y)]+entrada[POS(x-1,y+1)]+entrada[POS(x,y+1)]+entrada[POS(x+1,y+1)];
+    }
 }
 
 void filtro_sobel(unsigned char entrada[], unsigned char saida[], int largura, int altura)
@@ -60,14 +62,14 @@ int main()
 
     grava_png(imagem1, largura, altura, "resultado0.png");
 
-    filtro_media(imagem1, imagem2, largura, altura);
-    grava_png(imagem2, largura, altura, "resultado1.png");
+      filtro_media(imagem1, imagem2, largura, altura);
+      grava_png(imagem2, largura, altura, "resultado1.png");
 
-    filtro_sobel(imagem2, imagem1, largura, altura);
-    grava_png(imagem1, largura, altura, "resultado2.png");
+    //filtro_sobel(imagem2, imagem1, largura, altura);
+    //grava_png(imagem1, largura, altura, "resultado2.png");
 
-    filtro_threshold(imagem1, imagem2, largura, altura, 100);
-    grava_png(imagem2, largura, altura, "resultado3.png");
+    //filtro_threshold(imagem1, imagem2, largura, altura, 100);
+    //grava_png(imagem2, largura, altura, "resultado3.png");
 }
 
 int grava_png(unsigned char imagem[], int largura, int altura, char *nome_ficheiro)
