@@ -24,7 +24,7 @@
 int produto_vetores(int entrada1[], int n1, int entrada2[], int n2, int saida[])
 {
     int n=0;
-    if(n1>TAM_MAX || n2>TAM_MAX){
+    if(n1>TAM_MAX || n2>TAM_MAX || n1<=0 || n2<=0){
         n=-1;
     }
     else{
