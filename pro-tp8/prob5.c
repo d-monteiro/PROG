@@ -14,7 +14,7 @@ void contaVezes(int num, int dig,int *ptr_vezes){
 int main(){
     int num;
     int dig;
-    int *vezes;
+    int vezes=0;
     printf("Introduza um número inteiro: ");
     scanf("%d",&num);
     printf("Introduza um dígito: ");
