@@ -7,7 +7,7 @@ void contaVezes(int num, int dig,int *ptr_vezes){
         //printf("%d\n",u);
         if (u==dig) v++;
         num/=10;
-        //printf("%ld\n",n);
+        //printf("%d\n",n);
     }
     *ptr_vezes=v;
 }
