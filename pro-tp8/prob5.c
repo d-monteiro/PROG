@@ -15,12 +15,10 @@ int main(){
     int num;
     int dig;
     int vezes=0;
-    printf("Introduza um número inteiro: ");
     scanf("%d",&num);
-    printf("Introduza um dígito: ");
     scanf("%d",&dig);
     contaVezes(num,dig,&vezes);
-    printf("O digito %d aparece %d vezes no número %d\n",dig,vezes,num);
+    printf("O digito %d aparece %d vezes no número %d.\n",dig,vezes,num);
 }
 
 /*
