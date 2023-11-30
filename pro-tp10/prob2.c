@@ -25,7 +25,8 @@ typedef struct {
 int leArtigos(artigo armazem[])
 {
     int n=0, result;
-    while((result=scanf("%s %s %s %f %d", armazem[n].nome, armazem[n].marca, armazem[n].modelo, &armazem[n].preco, &armazem[n].quant))!=EOF)
+    while((result=scanf("%s %s %s %f %d", armazem[n].nome,armazem[n].marca,armazem[n].modelo,
+    &armazem[n].preco, &armazem[n].quant))!=EOF)
     {
         n++;
     }
@@ -102,7 +103,7 @@ int main()
     for (int i = 0; i < n_prod; i++) printf("- %s %s %s | %d | %.2f€\n", storage[i].nome, storage[i].marca, storage[i].modelo, storage[i].quant, storage[i].preco);
     printf("TOTAL: %d\n", n_prod);
 
-    printf("\nHá %d artigo(s) da marca %s e modelo %s.\n", totalArtigos(storage, n_prod, "Grapple", "10.2"), "Grapple", "10.2");
+    printf("\nHá %d artigo(s) da marca %s e modelo %s.\n", totalArtigos(storage,n_prod,"Grapple","10.2"),"Grapple","10.2");
     
     printf("\nArtigos com stock inferior a %d unidades:\n", lim);
     alertaArtigos(storage, n_prod, lim);
