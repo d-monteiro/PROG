@@ -124,7 +124,6 @@ int selecionaLivros(livro lista[], int n, char c1, char c2, livro lista_selec[])
         return num;
     }
     else return -1;
-    
 }
 
 /** 
