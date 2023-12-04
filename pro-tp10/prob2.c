@@ -25,11 +25,13 @@ typedef struct {
 int leArtigos(artigo armazem[])
 {
     int n=0, result;
-    while((result=scanf("%s %s %s %f %d", armazem[n].nome,armazem[n].marca,armazem[n].modelo,
-    &armazem[n].preco, &armazem[n].quant))!=EOF)
-    {
-        n++;
-    }
+    while((result=scanf("%s %s %s %f %d",
+    armazem[n].nome,
+    armazem[n].marca,
+    armazem[n].modelo,
+    &armazem[n].preco,
+    &armazem[n].quant))!=EOF
+    ) n++;
     return n;
 }
 
