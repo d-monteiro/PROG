@@ -118,8 +118,12 @@ void imprimeForca(int erros)
 
 void carregaPalavras(char *ficheiro, char palavras[][MAX], int *tamanho)
 {
-	/* a implementar */
-
+	int i=0;
+	FILE *f;
+	f=fopen(ficheiro,"r");
+	while (fscanf(f, "%s", palavras[i]) == 1) i++;
+	fclose(f);
+	*tamanho=i;
 }
 
 void obfuscaPalavra(char* palavra, char *nova)
@@ -148,7 +152,10 @@ int letraNaPalavra(char a, char* palavra)
 
 void revelaLetras(char letra, char *palavra, char *obfuscada)
 {
-	/* a implementar */
+	int comprimento=strlen(palavra);
+    for (int i = 0; i < comprimento; i++) {
+        if (palavra[i]==letra) obfuscada[i]=letra;
+    }
 }
 
 int vencedor(char *p1, char *p2)
@@ -161,7 +168,24 @@ int vencedor(char *p1, char *p2)
 
 int joga(char *palavra, char *palavra_obfuscada)
 {
-	/* a implementar */
-
-	return 0;
+	char letra;
+	int contador=0, erros=0, a=0;
+	while (vencedor(palavra,palavra_obfuscada)==0)
+	{
+		if (a==0) imprimeForca(0);
+	    printf("Digite uma letra: ");
+    	scanf(" %c",&letra);
+		revelaLetras(letra,palavra,palavra_obfuscada);
+		if (letraNaPalavra(letra,palavra)==0)
+		{
+			erros++;
+			imprimeForca(erros);
+			contador++;
+		}
+		printf("%s\n",palavra_obfuscada);
+		if (contador>=6) break;
+		a++;
+	}
+	
+    return contador;
 }
