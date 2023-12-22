@@ -25,11 +25,11 @@ typedef struct{
 float mvp(jogador statsJogadores[], int n, jogador *mvPlayer)
 {
     float temp=0;
-    if (n>0)
+    if(n>0)
     {
-        for (int i = 0; i < n; i++)
+        for(int i=0;i<n;i++)
         {
-            if (statsJogadores[i].pts>temp){
+            if(statsJogadores[i].pts>temp){ 
                 temp=statsJogadores[i].pts;
                 *mvPlayer=statsJogadores[i];
             }
@@ -50,28 +50,23 @@ float mvp(jogador statsJogadores[], int n, jogador *mvPlayer)
  */
 int gravaEstatisticas(jogador statsJogadores[], int n, char *equipa, char *nomeFicheiro)
 {
-    int num=0;
-    if (n>0 || (strlen(equipa)==0) || (strlen(nomeFicheiro)==0))
-    {
-        FILE *f;
-        f=fopen(nomeFicheiro,"w");
-        for (int i = 0; i < n; i++)
-        {
-            if (strcmp(statsJogadores[i].nomeEquipa,equipa)==0)
-            {
-                fprintf(f,"%s\t",statsJogadores[i].nome);
-                fprintf(f,"%s\t",statsJogadores[i].nomeEquipa);
-                fprintf(f,"%d\t",statsJogadores[i].jogos);
-                fprintf(f,"%f\t",statsJogadores[i].min);
-                fprintf(f,"%f",statsJogadores[i].pts);
-                fprintf(f,"\n");
-                num++;
-            }  
-        }
-        fclose(f);
-        return num;
+    int counter = 0;
+    FILE* fptr;
+    if (n <= 0 || nomeFicheiro[0] == '\0' || equipa[0] == '\0'){
+        return -1;
     }
-    else return -1;
+    fptr = fopen(nomeFicheiro, "w");
+    if (fptr == NULL){
+        return -1;
+    }
+    for (int i = 0; i < n; ++i){
+        if (!strcmp(statsJogadores[i].nomeEquipa, equipa)) {
+            fprintf(fptr, "%s %s %d %f %f\n", statsJogadores[i].nome, statsJogadores[i].nomeEquipa, statsJogadores[i].jogos, statsJogadores[i].min, statsJogadores[i].pts); 
+            counter++;
+        }
+    }
+    fclose(fptr);
+    return counter;
 }
 
 /** 
