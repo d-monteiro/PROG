@@ -1,0 +1,120 @@
+Sara Smith,1,1:32:55,3:05:23,USA
+Emily Johnson,2,1:35:43,3:08:12,Canada
+Jessica Williams,3,1:37:21,3:09:45,USA
+Olivia Brown,4,1:39:34,3:11:22,UK
+Elizabeth Davis,5,1:40:19,3:12:05,USA
+Mia Thompson,6,1:41:43,3:13:12,Australia
+Ashley Rodriguez,7,1:42:13,3:13:41,Mexico
+Madeline Taylor,8,1:42:51,3:14:17,Canada
+Samantha Anderson,9,1:43:25,3:14:47,USA
+Isabella Jones,10,1:44:06,3:15:24,UK
+Abigail Williams,11,1:44:41,3:15:56,USA
+Emily Martinez,12,1:45:13,3:16:25,Mexico
+Emma Thompson,13,1:45:48,3:16:56,Australia
+Sofia Rodriguez,14,1:46:22,3:17:25,Mexico
+Natalie Taylor,15,1:46:53,3:17:52,Canada
+Hannah Anderson,16,1:47:24,3:18:18,USA
+Chloe Jones,17,1:47:53,3:18:43,UK
+Ava Williams,18,1:48:22,3:19:07,USA
+Emily Martinez,19,1:48:50,3:19:30,Mexico
+Madison Taylor,20,1:49:17,3:19:53,Canada
+Ana Rodriguez,21,1:37:53,3:10:13,Mexico
+Maria Taylor,22,1:40:23,3:12:09,Canada
+Elena Anderson,23,1:41:46,3:13:16,USA
+Sofia Jones,24,1:42:16,3:13:45,USA
+Isabella Williams,25,1:43:50,3:15:18,Canada
+Laura Martinez,26,1:44:22,3:15:47,Mexico
+Claire Thompson,27,1:45:03,3:16:24,Canada
+Ella Rodriguez,28,1:45:37,3:16:55,Mexico
+Emma Taylor,29,1:46:11,3:17:25,USA
+Julia Anderson,30,1:46:44,3:17:53,UK
+Alexandra Jones,31,2:47:18,3:18:22,USA
+Anna Williams,32,2:47:51,3:18:49,UK
+Victoria Martinez,33,2:48:24,3:19:16,Mexico
+Anna Thompson,34,2:48:57,3:19:42,Australia
+Ava Rodriguez,35,1:49:29,3:20:07,Mexico
+Chloe Taylor,36,1:50:01,3:20:31,Australia
+Alexandra Anderson,37,1:50:33,3:20:55,Australia
+Sara Jones,38,1:51:05,3:21:18,Australia
+Emma Williams,39,1:51:36,3:21:41,Australia
+Sofía Martinez,40,1:52:07,3:22:03,Mexico
+Maria Rodriguez,41,1:38:25,3:10:42,Spain
+Maria Schmidt,42,1:41:08,3:12:34,Germany
+Elena Rossi,43,1:42:31,3:13:41,Italy
+Sofia Garcia,44,1:43:02,3:14:10,Spain
+Isabella Müller,45,1:44:35,3:15:43,Germany
+Laura Ferrari,46,1:45:08,3:16:12,Italy
+Claire Dupont,47,1:45:41,3:16:41,France
+Ella Moreno,48,1:46:14,3:17:10,Spain
+Emma Bauer,49,1:46:48,3:17:39,Germany
+Julia Romano,50,1:47:22,3:18:08,Italy
+Alexandra Santoro,51,1:47:56,3:18:37,Italy
+Isabelle Meier,52,1:48:30,3:19:06,Germany
+Victoria Costa,53,1:49:05,3:19:35,Spain
+Anna Rousseau,54,1:49:40,3:20:04,France
+Ava Perez,55,1:50:15,3:20:33,Spain
+Chloe Laurent,56,1:50:50,3:21:02,France
+Alexandra Romano,57,1:51:26,3:21:31,Italy
+Sara Moreno,58,1:52:02,3:22:00,Spain
+Emma Garcia,59,1:52:39,3:22:29,Spain
+Laura Rossi,60,1:53:16,3:22:58,Italy
+Aisha Ahmed,61,1:45:00,3:30:00,Egypt
+Fatou Jallow,62,1:50:00,3:35:00,Gambia
+Naledi Mathebula,63,1:52:00,3:37:00,South Africa
+Adama Barrow,64,1:54:00,3:39:00,Gambia
+Hawa Sissoko,65,1:56:00,3:41:00,Mali
+Zeinab Hassan,66,1:58:00,3:43:00,Egypt
+Zainab Abdi,67,2:00:00,3:45:00,Somalia
+Salma Khatun,68,2:02:00,3:04:23,Tanzania
+Fatima Mbowe,69,2:04:00,3:19:00,Tanzania
+Leila Soumare,70,2:06:00,3:51:00,Mali
+Fatima Ahmed,71,1:40:47,3:13:13,Egypt
+Binta Sissoko,72,1:42:11,3:14:37,Mali
+Maria Kone,73,1:43:35,3:16:01,Ivory Coast
+Elena Ndour,74,1:45:00,3:17:26,Senegal
+Sofia Abdi,75,1:46:24,3:18:50,Somalia
+Isabella Asante,76,1:47:49,3:20:15,Ghana
+Laura Toure,77,1:49:13,3:21:39,Ivory Coast
+Claire Kamara,78,1:50:38,3:23:04,Sierra Leone
+Ella Ba,79,1:52:02,3:24:28,Mali
+Emma Adebayo,80,1:53:27,3:25:53,Nigeria
+Sandra Rodriguez,81,1:40:15,3:12:41,Argentina
+Carla da Silva,82,1:41:39,3:14:05,Brazil
+Maria Gomez,83,1:43:03,3:15:29,Colombia
+Elena Perez,84,1:44:27,3:16:53,Argentina
+Sofia Castro,85,1:45:51,3:18:17,Brazil
+Isabella Vargas,86,1:47:15,3:19:41,Colombia
+Laura Santos,87,1:48:39,3:21:05,Brazil
+Claire Moreno,88,1:50:03,3:22:29,Brazil
+Ella Rios,89,1:51:27,3:23:53,Mexico
+Emma Rodriguez,90,1:52:51,3:25:17,Argentina
+Julia Hernandez,91,1:54:15,3:26:41,Mexico
+Alexandra Santos,92,1:55:39,3:28:05,Brazil
+Isabelle Fernandez,93,1:57:03,3:29:29,Argentina
+Victoria Soto,94,1:58:27,3:30:53,Chile
+Anna Ruiz,95,1:59:51,3:32:17,Mexico
+Ava Martinez,96,2:01:15,3:33:41,Argentina
+Chloe Gonzalez,97,2:02:39,3:35:05,Mexico
+Alexandra Moreno,98,2:04:03,3:36:29,Argentina
+Sara Hernandez,99,2:05:27,3:37:53,Mexico
+Emma Rodriguez,100,2:06:51,3:39:17,Argentina
+Zhou Ling,101,1:45:23,3:30:43,China
+Kim Min-ji,102,1:50:31,3:35:16,South Korea
+Nguyen Thi Anh,103,1:52:00,3:37:48,Vietnam
+Tran Khanh,104,1:54:23,3:39:23,Vietnam
+Fujimoto Akiko,105,1:56:12,3:41:32,Japan
+Jin Wei,106,1:58:00,3:43:13,China
+Zhang Xiaoyu,107,2:00:42,3:45:12,China
+Lee Yeon-ju,108,2:02:12,3:27:00,South Korea
+Sakai Mika,109,2:04:32,3:29:54,Japan
+Nguyen Thi Ha,110,2:06:45,3:51:43,Vietnam
+Wang Yuhui,111,2:08:38,3:53:28,China
+Kim Hee-jeong,112,2:10:32,3:55:54,South Korea
+Nguyen Thi Thanh,113,2:12:23,3:57:23,Vietnam
+Tran Thi Thu,114,2:14:00,3:59:00,Vietnam
+Fujimoto Emi,115,1:46:32,3:11:21,Japan
+Lin Jia,116,2:18:43,4:03:32,China
+Lee Eun-ju,117,2:20:12,4:05:03,South Korea
+Sakai Yumi,118,2:22:32,3:37:12,Japan
+Nguyen Thi Lan,119,2:24:00,4:09:45,Vietnam
+Wang Yuhan,120,2:26:26,4:11:07,China
