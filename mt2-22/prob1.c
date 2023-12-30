@@ -12,16 +12,64 @@
 
 int lerPalavras(char palavras[][MAXSTR])
 {
-    /* 1.1 - Implementar esta função */
-
-    return 0;
+    int i=0;
+    int n=0;
+    char temp[MAXV][MAXSTR];
+    while (scanf("%s",temp[i])!=EOF){
+        i++;
+    }
+    for (int j = 0; j < i; j++)
+    {
+        if (strlen(temp[j])<=6 && strlen(temp[j])>0)
+            {
+                strcpy(palavras[n],temp[j]);
+                n++;
+            }
+    }
+    return n;
 }
 
 int calcCriterio(char nomes[][MAXSTR], int n, int CQ[])
-{    
-    /* 1.2 - Implementar esta função */
+{
+    int nL[MAXV];
+    int nM[MAXV];
+    int lwr=MAXV+1;
+    int num=0;
+    for (int i = 0; i < n; i++)
+    {
+        int cont=0;
+        for (int j = 0; j < strlen(nomes[i]); j++)
+        {
+            if (nomes[i][j] != ' ') cont++;
+        }
+        nL[i]=cont;
+    }
 
-    return 0;
+    for (int i = 0; i < n; i++)
+    {
+        int cont=0;
+        for (int j = 0; j < strlen(nomes[i]); j++)
+        {
+            if (isupper(nomes[i][j])) cont++;
+        }
+        nM[i]=cont;
+    }
+    
+    
+    for (int i = 0; i < n; i++)
+    {
+        CQ[i]=abs(25-nL[i])-nM[i];
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if(CQ[i]<lwr)
+        {
+            lwr=CQ[i];
+            num=i;        }
+    }
+    
+    return num;
 }
 
 /****************************************************/

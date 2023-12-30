@@ -21,18 +21,67 @@ typedef struct{
 
 float calcPercentagem(pessoa *pv, int n, char *regiao, float limite, char *nomeFicheiro)
 {
-    /* 2.1 - Implementar esta funcao */
-
-    return 0;
+    float count=0;
+    float total=0;
+    float IMC[MAXREG];
+    for (int i = 0; i < n; i++)
+    {
+        IMC[i]=(pv[i].peso/((pv[i].altura/100)*(pv[i].altura/100)));
+    }
+    if(nomeFicheiro!=NULL)
+    {
+        FILE *f;
+        f=fopen(nomeFicheiro,"w");
+        for (int i = 0; i < n; i++)
+        {
+            if (strcmp(pv[i].regiao,regiao)==0)
+            {
+                total++;
+                if (IMC[i]>limite)
+                {
+                    fprintf(f,"%s | %.1f | %.1f\n", pv[i].nome, pv[i].altura, pv[i].peso);
+                    count++;
+                }
+            }
+        }
+        fclose(f);
+    }
+    else
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if (strcmp(pv[i].regiao,regiao)==0)
+            {
+                total++;
+                if (IMC[i]>limite) count++;
+            }
+        }
+    }
+    float Percentagem=(count/total)*100;
+    return Percentagem;
 }
 
 /****************************************************/
 
 float calcMediana(pessoa *pv, int n)
 {
-    /* 2.2 - Implementar esta funcao */
+    float mediana=0;
+    float h[MAXREG];
+    for (int i = 0; i < n-1; i++) h[i]=pv[i].altura;
+    for (int i = 0; i < n-1; i++){
+        for (int j = 0; j < n-i-1; j++){
+            if (h[j]>h[j+1]){
+                float temp=h[j];
+                h[j]=h[j+1];
+                h[j+1]=temp;
+            }
+        } 
+    }
 
-    return 0;
+    if (n%2==0) mediana=(h[n/2]+h[n/2+1])/2.0;
+    else mediana=h[n/2];
+
+    return mediana;
 }
 
 /****************************************************/
@@ -47,7 +96,6 @@ int main()
     pessoa pv[MAXREG]={0};
     int   n=0;
     float media=0.0, mediana;
-    float perc[MAXREG]={0};
     char *pesquisa1 = "North West";
     char *pesquisa2 = "London";
 
@@ -71,7 +119,7 @@ int lerEntrada(char *ficheiro, pessoa *pv, int n)
     const char *sep = ";";
     char *token;
     char linha[200]={0};
-    int  i=0, linec=0;
+    int linec=0;
     
     f = fopen(ficheiro, "r");
     if(f==NULL){
