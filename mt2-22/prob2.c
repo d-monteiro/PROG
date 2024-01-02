@@ -148,7 +148,7 @@ int lerEntrada(char *ficheiro, pessoa *pv, int n)
 }
 
 void imprimePessoas(const pessoa v[], int n){
-    int iter =0;
+    int iter = 0;
     printf("Pessoas na lista:\n");
     for(iter=0; iter<2;iter++){
         printf("%18s | %25s | %.1f | %.1f\n", \
