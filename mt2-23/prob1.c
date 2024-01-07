@@ -18,10 +18,7 @@ float haversine(float lat1, float lon1, float lat2, float lon2);
 int leViagens(char cidades[][MAXSTR], float latitudes[], float longitudes[], int portagens[])
 {
     int i = 0;
-    while (scanf("%s %f %f %d", cidades[i], &latitudes[i], &longitudes[i], &portagens[i]) != EOF)
-    {
-        i++;
-    }
+    while (scanf("%s %f %f %d", cidades[i], &latitudes[i], &longitudes[i], &portagens[i]) != EOF) i++;
     return i;
 }
 /*
