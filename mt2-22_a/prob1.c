@@ -16,7 +16,26 @@
  * Nota: a informacao da origem e’ lida, mas nao guardada. 
  */
 int lerAtletas(char nomes[][TSIZE], float distancia[])
-{
+{   
+    int numAtletas = 0;
+    char origem[TSIZE], nome1[TSIZE], nome2[TSIZE];
+    float dist;
+    while (scanf("%s", origem) != EOF) {
+
+
+        if (strcmp(origem, "Galia") == 0){
+            scanf("%s %f", nome1, &distancia[numAtletas]);
+            strcpy(nomes[numAtletas],nome1);
+        }
+        else {
+            scanf("%s %s %f", nome1, nome2, &distancia[numAtletas]);
+            strcpy(nomes[numAtletas],nome1);
+            strcat(nomes[numAtletas],nome2);
+        }
+        numAtletas++;
+    }
+
+    return numAtletas;
 }
 
 
@@ -26,6 +45,16 @@ int lerAtletas(char nomes[][TSIZE], float distancia[])
  */
 int corrigeTabela(char nomes[][TSIZE], float distancia[], int nAtleta)
 {
+    for (int i = 0; i < nAtleta; i++)
+    {
+        if (strstr(nomes[i]," ")!=NULL)
+        {
+            distancia[i]=distancia[i]-10;
+        }
+        
+    }
+    
+    return 0;
 }
 
 
@@ -62,4 +91,5 @@ void imprimePontuacoes(float distancias[], int n)
             printf("\n");
         printf("%2.1f ", distancias[i]);
     }
+    printf("\n");
 }
