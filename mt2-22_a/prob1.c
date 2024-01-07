@@ -30,10 +30,17 @@ int lerAtletas(char nomes[][TSIZE], float distancia[])
         else {
             scanf("%s %s %f", nome1, nome2, &distancia[numAtletas]);
             strcpy(nomes[numAtletas],nome1);
+            strcat(nomes[numAtletas]," ");
             strcat(nomes[numAtletas],nome2);
         }
         numAtletas++;
     }
+    for (int i = 0; i < numAtletas; i++)
+    {
+        printf("%s\n",nomes[i]);
+        //printf("%f\n",distancia[i]);
+    }
+    
 
     return numAtletas;
 }
@@ -45,16 +52,17 @@ int lerAtletas(char nomes[][TSIZE], float distancia[])
  */
 int corrigeTabela(char nomes[][TSIZE], float distancia[], int nAtleta)
 {
+    int count=0;
     for (int i = 0; i < nAtleta; i++)
     {
-        if (strstr(nomes[i]," ")!=NULL)
+        if (strchr(nomes[i],' ')!=NULL && distancia[i]>=10)
         {
-            distancia[i]=distancia[i]-10;
+            distancia[i]=distancia[i]-7;
+            count++;
         }
-        
     }
     
-    return 0;
+    return count;
 }
 
 
