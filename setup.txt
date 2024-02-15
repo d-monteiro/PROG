@@ -1,0 +1,13 @@
+Setting up WSL:Ubuntu in VSCode:
+
+In Windows Functionalities-
+Activate "Windows Subsystem for Linux"
+(With BIOS virtualization enabled)
+
+In PowerShell-
+$ wsl --install -d Ubuntu
+
+In Ubuntu-
+$ sudo apt-get update
+$ sudo apt-get dist-upgrade
+$ sudo apt-get install gcc
